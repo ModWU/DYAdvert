@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/id_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#aaaaaa"
+        />
+    
+    
+     
+    <Button 
+        android:id="@+id/id_btn1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_parent"
+        android:text="廣告條"
+        android:onClick="onStartAd"
+        />
+    
+    <Button 
+        android:id="@+id/id_btn2"
+        android:layout_below="@+id/id_btn1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="插屏廣告"
+        android:onClick="onContinueAd"
+        />
+    
+    <Button 
+        android:id="@+id/id_btn3"
+        android:layout_below="@+id/id_btn2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="開屏廣告"
+        android:onClick="onPauseAd"
+        />
+    
+    <Button 
+        android:id="@+id/id_btn4"
+         android:layout_below="@+id/id_btn3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="積分墻"
+        android:onClick="onStopAd"
+        />
+    
+    
+    
+     <Button 
+        android:id="@+id/id_btn5"
+         android:layout_below="@+id/id_btn4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="rebound"
+        android:onClick="onRebound"
+        />
+     
+     <Button 
+         android:id="@+id/id_btn6"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/id_btn5"
+         android:onClick="onViewPager"
+         android:text="viewPager"
+         />
+     
+     <LinearLayout 
+         android:id="@+id/id_LLparent"
+         android:layout_width="fill_parent"
+         android:layout_height="80dp"
+         android:orientation="vertical"
+         android:layout_below="@id/id_btn6"
+         ></LinearLayout>
+     
+     <Button 
+         android:id="@+id/id_btn7"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/id_LLparent"
+         android:onClick="onPost"
+         android:text="post data"
+         />
+   
+
+</RelativeLayout>
